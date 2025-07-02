@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="topbar">
+      <ul>
+        <li class="nav-left">
+          <a href="index.html"><h3>MICHAEL LI</h3></a>
+        </li>
+        <li class="nav-right"><a href="index.html#about">about</a></li>
+        <li class="nav-right"><a href="index.html#news">news</a></li>
+        <li class="nav-right"><a href="index.html#projects">projects</a></li>
+      </ul>
+    </nav>
+    <main id="project-main">
+      <section id="description">
+        <div class="title">
+          <h3>LIDAR Coordinate Converter Project</h3>
+        </div>
+        <div class="lidar-text">
+          For this project, I worked under Professor Kevin Chen at the
+          University of Pittsburgh at the Swanson School of Engineering. My main
+          task was creating a server that would get the local coordinates of an
+          object (vehicle, pedestrain, object, etc.) from the LIDAR and convert
+          it to to global WGS84 latitude and longitude coordinates, employing
+          precise techniques such as bearing estimation and rotation angles to
+          ensure high accuracy in the transformations.
+          <br />
+          <br />
+          This process required rigorous testing, during which I wrote unit
+          tests to thoroughly validate the accuracy of the conversions and
+          implemented Python’s logging framework to monitor the execution of the
+          algorithm. Additionally, I integrated YAML configurations to
+          streamline the input of test coordinates, making the testing process
+          more efficient. Beyond the core algorithm, I applied RESTful API
+          design principles using JavaScript, React, and Python to facilitate
+          real-time data extraction from LIDAR systems. This integration enabled
+          the system to process and manage up to 10,000 coordinate points per
+          second, ensuring both speed and reliability in handling large datasets
+          from the LIDAR system.
+        </div>
+        <h4>Demo Video</h4>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/nK4wIzfwSYc?si=amhdoMEDJD6t9pln"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="examples">
+        <img
+          src="https://cdn.glitch.global/aa075975-9b72-43e2-ac5a-3ab804b1ed75/IMG_7928.jpeg?v=1729211319298"
+        />
+      </section>
+    </main>
+  </body>
+</html>
